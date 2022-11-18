@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Booking Form</title>
+    <style>
+        body{
+            margin-center:100%;
+			background-image:url(img1.jpg);
+	        background-size:100%;
+	        height: 100%;
+	        width: 100%;
+			background-position:center;
+			background-size:cover;
+            background-repeat: no-repeat;
+			background-attachment:fixed;
+	    }
+	   
+    </style>
+</head>
+<body>
+    <div class="box">
+        <h1>Booking Form</h1>
+		 <form>
+			Full Name   :<input type="text" placeholder="Full Name"><br>
+            
+            
+            Email  :<input type="text" placeholder="Email_Address"><br>
+            
+            Mobile : <input type="number" placeholder="Mob_Num"><br>
+           
+			
+            Arrival Date :<input type="date" placeholder="d/m/Y"><br>
+            
+            Number of Person : <input type="number" placeholder="UNKNOWN_TYPE"><br>
+           
+            <label>What would you want to avail?</label><br>
+            Boarding<input type="checkbox"><br>
+            Fooding<input type="checkbox"><br>
+            Sight Seeing<input type="checkbox"><br><br>
+			
+			Date of booking   :<INPUT TYPE="TEXT" VALUE="    /     /2022" SIZE="30"><br>
+			
+            Date of leaving   :<INPUT TYPE="TEXT" VALUE="    /     /2022" SIZE="30"><br>
+			<BR>
+select payment option:
+<SELECT>
+<option value="POOL">CREDIT CARD</OPTION>
+<option value="GAME LOT">DEBIT CARD</OPTION>
+<option value="POOL">UPI</OPTION>
+<option value="GAME LOT">NET BANKING</OPTION>
+</SELECT>
+<BR>
+select Payment Gateway:
+<SELECT>
+<option value="POOL">payTM</OPTION>
+<option value="GAME LOT">PAY-PAL</OPTION>
+</SELECT>
+</b>
+</pre>
+</p>
+
+			
+            <label>Terms & Conditions</label><br>
+            <input type="radio" name="r">I Agree
+            <input type="radio" name="r">I Disagree<br><br>
+            <button type="submit" value="submit">Confirm Reservation</button>
+
+<script>
+function abc(x) {
+    x.style.background = "#E89E00";
+}
+ 
+function fn()
+{
+var x = document.getElementById("FN");
+x.value=x.value.toUpperCase();
+}
+
+function fn2()
+{
+var x = document.getElementById("LN");
+x.value=x.value.toUpperCase();
+}
+
+        </form>
+    </div>
+</body>
+</html>
