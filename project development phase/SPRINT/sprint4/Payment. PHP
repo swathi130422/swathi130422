@@ -1,0 +1,64 @@
+<?php
+
+$Full name = $_POST['Full Name'];
+$Nick Name  = $_POST['Nick name'];
+$Email Address = $_POST['Email address'];
+$DD = $_POST['DD'];
+$MM = $_POST['MM'];
+$YY = $_POST['YY'];
+$Gender = $_POST['Gender'];
+$Payment Details = $_POST['Payment Details'];
+$Card Number= $_POST['Card Number'];
+$Card CVC= $_POST['Card CVC'];
+$index-box = $_POST['index-box'];
+
+
+
+if (!empty($Full Name) || !empty($Nick name) ||!empty($Email Address) || !empty($DD) || !empty($MM) )!empty($YY) ||!empty($Gender) ||!empty($Payment Details) ||
+!empty($Card Number) ||!empty($Card CVC) ||!empty($index-box) ||
+{
+
+$host = "localhost";
+$dbusername = "root";
+$dbpassword = "";
+$dbname = "PAYMENT FORM";
+
+
+
+// Create connection
+$conn = new mysqli ($host, $dbusername, $dbpassword, $dbname);
+
+if (mysqli_connect_error()){
+  die('Connect Error ('. mysqli_connect_errno() .') '
+    . mysqli_connect_error());
+}
+else{
+  $SELECT = "SELECT Email Address From register Where Email Address = ? Limit 1";
+  $INSERT = "INSERT Into register (Full Name,Nick Name,Email Address,DD,MM,YY,Payment Details,Card Number,Card CVC,index-box )values(?,?,?,?,?,?,?,?,?,?)";
+
+//Prepare statement
+     $stmt = $conn->prepare($SELECT);
+     $stmt->bind_param("s", $Email Address);
+     $stmt->execute();
+     $stmt->bind_result($Email Address);
+     $stmt->store_result();
+     $rnum = $stmt->num_rows;
+
+     //checking username
+      if ($rnum==0) {
+      $stmt->close();
+      $stmt = $conn->prepare($INSERT);
+      $stmt->bind_param("ssss", $Full Name,$Nick Name,$Email Address,$DD,$MM,$YY,$Payment Details,$Card Number,$Crad CVC,$index-box);
+      $stmt->execute();
+      echo "New record inserted sucessfully";
+     } else {
+      echo "Someone already register using this email";
+     }
+     $stmt->close();
+     $conn->close();
+    }
+} else {
+ echo "All field are required";
+ die();
+}
+?>
