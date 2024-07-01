@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pavee's Milk</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
+        </style>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <script src="paveesmilk.js"></script>
+</head>
+<body>
+    <header> 
+        <div class="top-bar"> 
+            <div class="contact-infermation">
+                <span class="r1">Reach us out</span>
+                <span class="r3"><Span class="r2">@</Span> +91 12345 67890</span>
+            </div> 
+        </div>
+        <nav class="navbar">
+            <div class="logo">
+                <img src="hkl.jpeg" alt="Pavee's Milk Logo">
+                
+            </div>
+            <div class="menu" id="menu" onclick="toggleMenu()">
+                <div class="menu-line"></div>
+                <div class="menu-line"></div>
+                <div class="menu-line"></div>
+            </div>
+            <ul class="nav-links">
+                <li><a href="#" class="active">Home</a></li>
+                <li><a href="#">About us</a></li>
+                <li><a href="#">Locations</a></li>
+                <li><a href="#">What we offer</a></li>
+                <li><a href="#">Help</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+            
+            <div class="contact-button">
+                <a href="#" class="contact"><i class="fab fa-whatsapp"></i> Enquire</a>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero">
+            <div class="cowpink">
+                <img src="Vector (1).svg" alt="pink Image">
+            </div>
+            <div class="hero-content">
+                <h1>Fresh <span>RAW MILK</span></h1>
+                <p1>Delivered to your DoorStep</p1>
+                <p>Pure, Unprocessed, and Nutritious Milk from Local Farms</p>
+                <a href="#" class="enquire-button"><i class="fab fa-whatsapp"></i> Try Before You Buy!</a>
+            </div>
+            <div class="hero-image">
+                <img src="img.png" alt="Cow Image">
+            </div>
+        </section>
+    </main>
+    
+        <!--------------------------------------------->
+        <div class="about-us">
+            <div class="cont">
+                <h2>About Us</h2>
+                <div class="intro">
+                    <div class="text">
+                        <p>"Welcome to <strong>PAVEE'S MILK</strong>, your trusted source for pure, raw milk delivered directly from farm to your doorstep. We believe in providing our customers with the freshest and most nutritious milk, free from processing and additives.</p>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                    </div>
+                    <div class="image">
+                        <img src="farmimage.jpeg" alt="Farmer with milk can">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!------------------------------------------------------>
+        <section class="why-pavees">
+            <h2>Why Pavee's?</h2>
+            <div class="features">
+                <div class="feature">
+                    <img src="freshicon.png" alt="Fresh">
+                    <h3>Fresh</h3>
+                    <p>Milk is delivered directly from our associated dairy farm within a few hours of milking for freshness and quality.</p>
+                </div>
+                <div class="feature">
+                    <img src="tastyicon.png" alt="Tasty">
+                    <h3>Tasty</h3>
+                    <p>Experience the original flavor and texture of fresh raw milk.</p>
+                </div>
+                <div class="feature">
+                    <img src="qualityicon.png" alt="Quality">
+                    <h3>Quality</h3>
+                    <p>Our milk is free from artificial additives, hormones, and preservatives. It is pure, natural, and reflects the pristine environment in which our cows graze.</p>
+                </div>
+                <div class="feature">
+                    <img src="healthyicon.png" alt="Healthy">
+                    <h3>Healthy</h3>
+                    <p>Our raw milk is rich in minerals and vitamins that conventional milk available in the market lacks.</p>
+                </div>
+            </div>
+        </section>
+        <!--------------------------------------------------->
+        <div  class="locations">
+            <div class="class">
+                <h1>Locations we distribute</h1>
+                <div class="location-cards">
+                    <div class="location-card">
+                        <img src="truckicon.png" alt="Saravanampatti">
+                        <p>Saravanampatti</p>
+                    </div>
+                    <div class="location-card">
+                        <img src="truckicon.png" alt="Kalapatti">
+                        <p>Kalapatti</p>
+                    </div>
+                    <div class="location-card">
+                        <img src="truckicon.png" alt="Idigarai">
+                        <p>Idigarai</p>
+                    </div>
+                    <div class="location-card">
+                        <img src="truckicon.png" alt="Keeranatham">
+                        <p>Keeranatham</p>
+                    </div>
+                </div>
+                <div class="map">
+                    <iframe 
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3917.1660327190184!2d76.93988921431516!3d11.066158791761616!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ba858b729f234ad%3A0x435faf41e6bb5e85!2sSaravanampatti%2C%20Coimbatore%2C%20Tamil%20Nadu!5e0!3m2!1sen!2sin!4v1623408422207!5m2!1sen!2sin" 
+                        width="600" 
+                        height="450" 
+                        style="border:0;" 
+                        allowfullscreen="" 
+                        loading="lazy">
+                    </iframe>
+                </div>
+            </div>
+        </div>
+        <!------------------------------------------------------------------------------->
+        <div class="offer-container">
+            <h1>What we offer</h1>
+            <div class="offer-item">
+                <div class="offer-content">
+                    <div class="offer-img-container">
+                        <img src="sub1.png" alt="Subscription Plan" class="offer-img">
+                    </div>
+                    <div class="text-content">
+                        <h2>Subscription plan</h2>
+                        <p class="sub-title">Monthly plans</p>
+                        <p>Our subscription plan ensures you never run out of fresh milk. Choose monthly deliveries tailored to your schedule and consumption needs. Enjoy the convenience of regular deliveries right to your doorstep.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="offer-item right-item">
+                <div class="offer-content right-image">
+                    <div class="text-content">
+                        <h2>Bulk Orders</h2>
+                        <p class="sub-title">Perfect for cafes, restaurants, and large families</p>
+                        <p>For larger needs, our bulk order service is ideal for cafes, restaurants, and big families. Get fresh, raw milk in larger quantities at competitive prices. Ensure your customers or family always have access to pure, nutritious milk.</p>
+                    </div>
+                    <div class="offer-img-container">
+                        <img src="sub2.png" alt="Bulk Orders" class="offer-img">
+                    </div>
+                </div>
+            </div>
+        </div>
+                
+        <!------------------------------------------------------->
+
+        <div class="comparison-container">
+            <h1>Raw Milk <span>vs</span> Pasteurized Milk</h1>
+            <div class="comparison-table">
+                <div class="column">
+                    <img src="fresh.png" alt="Raw Milk">
+                    
+                </div>
+                <div class="column">
+                    <img src="raw.png" alt="Pasteurized Milk">
+                    
+                </div>
+            </div>
+            <table class="comparison-table-desktop">
+                <tr>
+                    <td>It is delivered directly from the farm to doorstep</td>
+                    <td><img src="frame1.svg" alt="Check Icon"></td>
+                    <td></td>
+                    <td>It involves multiple channels until the milk reaches you</td>
+                    <td><img src="frame.svg" alt="Cross"></td>
+                </tr>
+                <tr>
+                    <td>6 - 12 hours old</td>
+                    <td><img src="frame1.svg" alt="Check Icon"></td>
+                    <td></td>
+                    <td>36 - 72 hours old</td>
+                    <td><img src="frame.svg" alt="Cross"></td>
+                </tr>
+                <tr>
+                    <td>Raw / unprocessed</td>
+                    <td><img src="frame1.svg" alt="Check"></td>
+                    <td></td>
+                    <td>Pasteurized and also homogenized</td>
+                    <td><img src="frame.svg" alt="Cross"></td>
+                </tr>
+                <tr>
+                    <td>Natural fat content</td>
+                    <td><img src="frame1.svg" alt="Check"></td>
+                    <td></td>
+                    <td>The fat is adjusted to make it thick</td>
+                    <td><img src="frame.svg" alt="Cross"></td>
+                </tr>
+                <tr>
+                    <td>Easy to digest</td>
+                    <td><img src="frame1.svg" alt="Check"></td>
+                    <td></td>
+                    <td>Difficult to digest</td>
+                    <td><img src="frame.svg" alt="Cross"></td>
+                </tr>
+                <tr>
+                    <td>Naturally tasty and nutritious</td>
+                    <td><img src="frame1.svg" alt="Check"></td>
+                    <td></td>
+                    <td>It is fortified for ensuring its nutritional value</td>
+                    <td><img src="frame.svg" alt="Cross"></td>
+                </tr>
+            </table>
+            
+        </div>
+        <!----------------------------------------------->
+
+        <div class="container" style="background-image: url('bg1.png');">
+
+            <div class="header">
+                <h2>Help</h2></div>
+            <div class="faq-enquire">
+                <div class="background-shape"></div>
+                <div class="faq">
+                    <h2>FAQ</h2>
+                  
+                    <ul>
+                        <li>What is Raw milk?
+                            <div class="answer">Raw milk—straight from the cow—does not go through the pasteurization process.</div>
+                            
+                        </li>
+                        <hr width="100%" size="2" color="white" noshade>
+                        <li>Difference between Raw and Pasteurized milk?
+                            <div class="answer">Raw milk is unprocessed while pasteurized milk has been heated to eliminate harmful bacteria.</div>
+                        </li>
+                        <hr width="100%" size="2" color="white" noshade>
+            
+                        <li>Can we consume Raw milk?
+                            
+                            <div class="answer">Raw milk can be consumed but it's important to ensure it's from a safe and clean source.</div>
+                        
+                        </li>
+                        <hr width="100%" size="2" color="white" noshade>
+                    
+                        <li>Benefits of drinking Raw milk?
+                            <div class="answer">Raw milk contains more natural enzymes and nutrients compared to pasteurized milk.</div>
+                        </li>
+                        <hr width="100%" size="2" color="white" noshade>
+                        
+                        <li>What is the pricing?
+                            <div class="answer">Pricing of raw milk may vary based on location and source.</div>
+                        </li>
+                        
+                    
+                    </ul>
+                </div>
+                <div class="enquire">
+                    <h2>Enquire</h2>
+                    <form>
+                        <div class="flex">
+                            <input type="text" name="name" placeholder="Name" required>
+                            <input type="text" name="mobile" placeholder="Mobile number" required>
+                        </div>
+                        <textarea name="address" rows="3" placeholder="Address" required></textarea>
+                        <button type="submit">Submit</button>
+                    </form>
+                </div>
+                
+                
+            </div>
+        </div>
+    </div>
+        <!------------------------------------------------>
+        <div class="contact-section">
+            <h2>Contact</h2>
+            <div class="contact-details">
+                <div class="contact-item">
+                    <img src="smartphone.png" alt="Phone Icon" class="icon">
+                    <p><strong>Call us at</strong><br>+91 12345 67890</p>
+                </div>
+                <div class="contact-item">
+                    <img src="location.png" alt="Location Icon" class="icon">
+                    <p> <strong>Locate us</strong><br>Abc company, street name, city - pincode</p>
+                </div>
+            </div>
+        </div>
+        <!--------------------------------------------->
+        
+        <div class="con">
+            <footer>
+                <div class="footer-content">
+                    <nav>
+                        <ul>
+                            <li><a href="#">Home</a></li>
+                            <div class="logo">
+                                <img src="f.png" alt="Pavee's Milk Logo">
+                            </div>
+                            <li><a href="#">About us</a></li>
+                            <li><a href="#">Contact</a></li>
+                            <li><a href="#">Privacy policy</a></li>
+                            <li><a href="#">T&C</a></li>
+                        </ul>
+                    </nav>
+                </div>
+                <p>&copy; 2024 Pavee's milk</p>
+            </footer>
+        </div>
+    </body>
+    </html>
